@@ -45,8 +45,3 @@ main {
 footer {
   width: 100%;
   text-align: right; }
-
-/*Grid Styles*/
-.row {
-  width: 100%;
-  border-bottom: 2px dotted red; }
