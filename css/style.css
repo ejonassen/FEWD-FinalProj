@@ -1,13 +1,43 @@
 body {
-  background-color: yellow; }
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: Arial, sans-serif; }
+
+.wrapper {
+  background-color: lightgray;
+  max-width: 1200px;
+  margin: 0 auto; }
 
 /*headerstyles*/
 header {
   margin: 0 auto;
   text-align: center; }
+  header h1 {
+    margin: 0;
+    padding: 0; }
 
 /*navstyles*/
+nav ul {
+  overflow: auto;
+  list-style-type: none; }
+  nav ul li {
+    float: left;
+    padding: 1em; }
+    nav ul li a {
+      text-decoration: none;
+      color: purple;
+      opacity: .8; }
+    nav ul li a:hover {
+      opacity: 1; }
+
 /*mainstyles*/
 /*footerstyles*/
 footer {
-  width: 100%; }
+  width: 100%;
+  text-align: right; }
+
+/*Grid Styles*/
+.row {
+  width: 100%;
+  border-bottom: 1px dotted gray; }
