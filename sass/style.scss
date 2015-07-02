@@ -5,23 +5,27 @@ body{
 	font-family: Arial, sans-serif;
 }
 .wrapper{
-	background-color: lightgray;
+	background-color: lightblue;
 	max-width: 1200px;
 	margin: 0 auto;
 }
 /*headerstyles*/
 header{
 	margin: 0 auto;
-	text-align: center;
+	height: 100px;
+	background-color: navy;
 	h1{
 		margin: 0;
-		padding: 0;
+		padding: 1em;
+		color: white;
 	}
 }
 /*navstyles*/
 nav{
-	
+	background-color: orange;
 	ul{
+		margin: 0;
+		padding: 0;
 		overflow: auto;
 		list-style-type: none;
 		li{
@@ -40,8 +44,7 @@ nav{
 }
 /*mainstyles*/
 main{
-
-
+	padding: .3em;
 }
 /*footerstyles*/
 footer{
@@ -53,5 +56,5 @@ footer{
 /*Grid Styles*/
 .row{
 	width: 100%;
-	border-bottom: 1px dotted gray;
+	border-bottom: 2px dotted red;
 }
