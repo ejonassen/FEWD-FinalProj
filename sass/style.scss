@@ -1,53 +1,18 @@
-//Variables
-
-$color1: lightblue;
-$color2: grey;
-
-//Mixins
-
-@mixin clearfix {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-@mixin sectionplace($float) {
-	float: $float;
-	margin-bottom: .5em;
-}
-
-//Styles
-
-/* Border box declaration */
-html {
-  box-sizing: border-box;
-}
-/* inherit border-box on all elements in the universe and before and after */
-*, 
-*:before, 
-*:after {
-  box-sizing: inherit;
-}
-
 body{
 	margin: 0;
 	padding: 0;
-	background-color: $color1;
+	background-color: #fff;
 	font-family: Arial, sans-serif;
 }
-
-h1, h2, h3 {
-	margin-top: 0;
-}
-
 .wrapper{
-	max-width: 75em;
+	background-color: lightblue;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 /*headerstyles*/
 header{
-	margin: .625em auto;
-	height: 6.25em;
+	margin: 0 auto;
+	height: 100px;
 	background-color: navy;
 	h1{
 		margin: 0;
@@ -59,7 +24,7 @@ header{
 nav{
 	background-color: orange;
 	ul{
-		margin: .625em 0;
+		margin: 0;
 		padding: 0;
 		overflow: auto;
 		list-style-type: none;
@@ -78,38 +43,9 @@ nav{
 	}
 }
 /*mainstyles*/
-.main-content{
-	@include sectionplace(right);
-	background-color: #fff;
-	padding: 1em;
-	width: 49.4em;
-	img {
-		float: left;
-		padding: 0 .5em;
-	}
+main{
+	padding: .3em;
 }
-
-aside {
-	@include sectionplace(left);
-	width: 24.4em;
-	.aside1, .aside2 {
-		margin-bottom: .5em;
-		padding: 1em;
-		background-color: #fff;
-	}
-}
-
-.bottom {
-	@include sectionplace(left);
-	background-color: #fff;
-	width: 75em;
-	padding: 1em;
-}
-
-main::after {
-	@include clearfix;
-}
-
 /*footerstyles*/
 footer{
 	width: 100%;

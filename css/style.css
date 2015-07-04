@@ -1,106 +1,47 @@
-/* Border box declaration */
-html {
-  box-sizing: border-box;
-}
-
-/* inherit border-box on all elements in the universe and before and after */
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
 body {
   margin: 0;
   padding: 0;
-  background-color: lightblue;
-  font-family: Arial, sans-serif;
-}
-
-h1, h2, h3 {
-  margin-top: 0;
-}
+  background-color: #fff;
+  font-family: Arial, sans-serif; }
 
 .wrapper {
-  max-width: 75em;
-  margin: 0 auto;
-}
+  background-color: lightblue;
+  max-width: 1200px;
+  margin: 0 auto; }
 
 /*headerstyles*/
 header {
-  margin: .625em auto;
-  height: 6.25em;
-  background-color: navy;
-}
-header h1 {
-  margin: 0;
-  padding: 1em;
-  color: white;
-}
+  margin: 0 auto;
+  height: 100px;
+  background-color: navy; }
+  header h1 {
+    margin: 0;
+    padding: 1em;
+    color: white; }
 
 /*navstyles*/
 nav {
-  background-color: orange;
-}
-nav ul {
-  margin: .625em 0;
-  padding: 0;
-  overflow: auto;
-  list-style-type: none;
-}
-nav ul li {
-  float: left;
-  padding: 1em;
-}
-nav ul li a {
-  text-decoration: none;
-  color: purple;
-  opacity: .8;
-}
-nav ul li a:hover {
-  opacity: 1;
-}
+  background-color: orange; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    list-style-type: none; }
+    nav ul li {
+      float: left;
+      padding: 1em; }
+      nav ul li a {
+        text-decoration: none;
+        color: purple;
+        opacity: .8; }
+      nav ul li a:hover {
+        opacity: 1; }
 
 /*mainstyles*/
-.main-content {
-  float: right;
-  margin-bottom: .5em;
-  background-color: #fff;
-  padding: 1em;
-  width: 49.4em;
-}
-.main-content img {
-  float: left;
-  padding: 0 .5em;
-}
-
-aside {
-  float: left;
-  margin-bottom: .5em;
-  width: 24.4em;
-}
-aside .aside1, aside .aside2 {
-  margin-bottom: .5em;
-  padding: 1em;
-  background-color: #fff;
-}
-
-.bottom {
-  float: left;
-  margin-bottom: .5em;
-  background-color: #fff;
-  width: 75em;
-  padding: 1em;
-}
-
-main::after {
-  content: "";
-  display: table;
-  clear: both;
-}
+main {
+  padding: .3em; }
 
 /*footerstyles*/
 footer {
   width: 100%;
-  text-align: right;
-}
+  text-align: right; }
