@@ -1,0 +1,101 @@
+/* Border box declaration */
+html {
+  box-sizing: border-box;
+}
+
+/* inherit border-box on all elements in the universe and before and after */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightblue;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 75em;
+  margin: 0 auto;
+}
+
+/*headerstyles*/
+header {
+  margin: 0 auto;
+  height: 16em;
+  background-color: navy;
+}
+header h1 {
+  font-size: 4em;
+  text-align: left;
+  padding: .5em;
+  color: white;
+}
+
+/*navstyles*/
+nav {
+  background-color: orange;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  font-size: 2.5em;
+  overflow: auto;
+  list-style-type: none;
+}
+nav ul li {
+  float: left;
+  padding: 1em;
+}
+nav ul li a {
+  text-decoration: none;
+  color: purple;
+}
+
+/*mainstyles*/
+.main-content {
+  background-color: #fff;
+  padding: 1em;
+  width: 100%;
+  overflow: auto;
+}
+.main-content img {
+  float: left;
+  padding: 0 .5em 0 0;
+  margin-right: 1em;
+}
+
+aside {
+  width: 100%;
+}
+aside .aside1, aside .aside2 {
+  margin-bottom: .5em;
+  padding: 1em;
+  background-color: #fff;
+}
+
+.bottom {
+  width: 100%;
+  background-color: #fff;
+  padding: 1em;
+  overflow: auto;
+}
+.bottom img {
+  float: right;
+  padding: 0 .5em;
+}
+
+/*footerstyles*/
+footer {
+  width: 100%;
+  text-align: right;
+  padding-right: 1em;
+}
