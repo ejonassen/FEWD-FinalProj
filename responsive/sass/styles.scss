@@ -1,0 +1,163 @@
+//Variables
+
+$color1: lightblue;
+$color2: grey;
+$color3: orange;
+
+//Mixins
+
+@mixin clearfix {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@mixin sectionplace($float) {
+	float: $float;
+	margin-bottom: .5em;
+}
+
+@mixin bigtext {
+	ul, p {
+		font-size: 1.2em;
+	}
+}
+
+
+//Styles
+
+/* Border box declaration */
+html {
+  box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: $color1;
+	font-family: Arial, sans-serif;
+}
+
+.wrapper {
+	width: 97%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
+header{
+	//margin .625em auto;
+	margin: 0 auto;
+	height: 300px;
+	background: url(../img/imghead.jpg) no-repeat right;
+	h1{
+		font-size: 3em;
+		padding: 230px 1em 1em .5em;
+		color: white;
+		text-shadow: 0 0 20px black;
+	}
+}
+
+h1, h2, h3 {
+	margin-top: 0;
+}
+
+nav {
+	ul {
+		margin: 0;
+		padding: 0;
+		background-color: $color3;
+		list-style: none;
+		li {
+			padding: 1em;
+			display: inline-block;
+		}
+		a {
+			text-decoration: none;
+			color: purple;
+			opacity: .8;
+			&:hover {
+				opacity: 1;
+			}
+			}
+	}
+}
+
+.row {
+	margin-bottom: .625em;
+	&::after {
+		@include clearfix;
+	}
+}
+
+[class*="col-"] {
+	float: left;
+	margin-right: 1.66667%;
+	background-color: #fff;
+	padding: 1em;
+	&:last-child {
+		margin-right: 0;
+	}
+	img {
+		margin: 0 1em;
+	}
+	//Solution to bullet points overlapping floated image, found on StackOverflow.com
+	ul {
+		list-style: outside disc;
+		margin-left: 1em;
+		li {
+			position: relative;
+			left: 1em;
+			padding-right: 1em;
+		}
+	}
+}
+
+ul.gallery {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-flow: row wrap;
+	li {
+		flex: 1 1 200px;
+	}
+}
+
+.col-1 {
+	width: 32.22222%;
+}
+
+.col-2 {
+	width: 66.11111%;
+	img {
+		float: left;
+	}
+	@include bigtext;
+}
+
+.col-3 {
+	width: 100%;
+	img {
+		float: right;
+	}
+	@include bigtext;
+}
+
+
+@media (max-width:852px) {
+	header {
+			background: url(../img/imghead_med.jpg) no-repeat right;
+			height: 230px;
+			h1 {
+				font-size: 2em;
+				padding: 170px 1em 1em .5em;
+			}
+	}
+}

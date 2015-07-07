@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Adaptive vs. Responsive Design</title>
+	<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+	<div class="wrapper">
+		<div class="row">
+			<header>
+				<h1>Adaptive vs. Responsive Design</h1>
+			</header>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="#">Dummylink</a></li>
+				</ul>
+			</nav>
+		</div>
+	
+		<main>
+			<div class="row">
+				<aside class="col-1 box">
+					<h3>Links</h3>
+						<p>Links to relevant information (mostly to take up page space tbh).</p>
+						<ul>
+							<li><a href="#">hi mom</a></li>
+							<li><a href="#">hi mom</a></li>
+							<li><a href="#">hi mom</a></li>
+							<li><a href="#">hi mom</a></li>
+							<li><a href="#">hi mom</a></li>
+
+						</ul>
+				</aside>
+				<div class="col-2 box">
+					<h2>Responsive Design</h2>
+					<img src="http://placehold.it/250x250" alt="Some image">
+					<p>"Responsive Design" is the idea that a webpage should dynamically resize to deal with different resolutions.</p>
+					<h3>Key Points</h3>
+					<ul>
+						<li>Resizes Dynamically, works without refresh</li>
+						<li>Supports a hypothetically infinite range of resolutions</li>
+						<li>An entirely front-end solution</li>
+						<li>Requires more information to be loaded to accomodate all resolutions</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-3">
+					<h2>Adaptive Design</h2>
+					<img src="http://placehold.it/250x250" alt="Some image">
+					<p>"Adaptive Design" is the idea that a different webpage altogether should be served to devices of differing resolutions.</p>
+						<ul>
+							<li>Offers more granular control over elements and their positioning (as the webpage can be designed manually for each supported resolution).</li>
+							<li>Requires that each supported resolution be specifically designed for</li>
+							<li>Does not require modification to the original webpage</li>
+							<li>Requires back-end/serverside support to detect User Agent, as well as up-to-date device lists</li>
+						</ul>
+				</div>
+			</div>
+		</main>
+	
+		<footer>
+			<p>&copy; 2015</p>
+		</footer>
+	</div>
+</body>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/grids.min.js"></script>
+	<script>
+		$('.box').responsiveEqualHeightGrid();
+	</script>
+</html>
