@@ -156,7 +156,25 @@ aside {
 main::after {
 	@include clearfix;
 }
-
+//GALLERY PAGE
+.gallery{
+	background-color: white;
+	padding-bottom: 2em;
+	h2{
+		padding: 2em;
+	}
+	ul{
+		list-style-type: none;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		li{
+			padding: 0;
+			display: inline-block;
+			margin: .5em;
+		}
+	}
+}
 /*footerstyles*/
 footer{
 	width: 100%;
