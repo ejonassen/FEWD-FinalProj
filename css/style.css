@@ -24,13 +24,15 @@ h1, h2, h3 {
 /*headerstyles*/
 header {
   margin: 0 auto;
-  height: 300px;
-  background: url(../img/imghead.jpg) no-repeat right; }
+  height: 360px;
+  background: url(../img/header1.png) no-repeat top center;
+  background-size: 100%;
+  background-position: 30px 0; }
   header h1 {
     font-size: 3em;
-    padding: 230px 1em 1em .5em;
+    padding: 290px 1em 1em .5em;
     color: white;
-    text-shadow: 0 0 20px black; }
+    text-shadow: 0 0 10px black; }
 
 /*navstyles*/
 nav {
@@ -61,9 +63,12 @@ nav {
   .main-content img {
     float: left;
     padding: 0 .5em;
-    margin-right: 1em; }
+    margin-right: 1.5em;
+    width: 270px; }
   .main-content ul, .main-content p {
     font-size: 1.2em; }
+  .main-content h3 {
+    clear: both; }
 
 aside {
   float: left;
@@ -74,17 +79,31 @@ aside {
     padding: 1em;
     background-color: #fff;
     height: 25em; }
+  aside ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    aside ul li {
+      margin: 0;
+      padding: 0; }
+    aside ul a {
+      text-decoration: none;
+      color: navy;
+      font-size: 1.2em; }
+    aside ul a:hover {
+      color: blue; }
 
 .bottom {
   float: left;
   margin-bottom: .5em;
   background-color: #fff;
   width: 75em;
-  height: 25em;
+  height: 30em;
   padding: 1em; }
   .bottom img {
     float: right;
-    padding: 0 .5em; }
+    padding: 0 .5em;
+    width: 280px; }
   .bottom ul, .bottom p {
     font-size: 1.2em; }
 
