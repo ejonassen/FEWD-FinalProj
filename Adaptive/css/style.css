@@ -1,0 +1,135 @@
+/* Border box declaration */
+html {
+  box-sizing: border-box; }
+
+/* inherit border-box on all elements in the universe and before and after */
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightblue;
+  font-family: Arial, sans-serif; }
+
+h1, h2, h3 {
+  margin-top: 0; }
+
+.wrapper {
+  width: 75em;
+  margin: 0 auto; }
+
+/*headerstyles*/
+header {
+  margin: 0 auto;
+  height: 360px;
+  background: url(../img/header1.png) no-repeat top center;
+  background-size: 100%;
+  background-position: 30px 0; }
+  header h1 {
+    font-size: 3em;
+    padding: 290px 1em 1em .5em;
+    color: white;
+    text-shadow: 0 0 10px black; }
+
+/*navstyles*/
+nav {
+  background-color: orange; }
+  nav ul {
+    margin: 0 0 .625em 0;
+    padding: 0;
+    overflow: auto;
+    list-style-type: none; }
+    nav ul li {
+      float: left;
+      padding: 1em; }
+      nav ul li a {
+        text-decoration: none;
+        color: purple;
+        opacity: .8; }
+      nav ul li a:hover {
+        opacity: 1; }
+
+/*mainstyles*/
+.main-content {
+  float: right;
+  margin-bottom: .5em;
+  height: 25em;
+  background-color: #fff;
+  padding: 1em;
+  width: 49.4em; }
+  .main-content img {
+    float: left;
+    padding: 0 .5em;
+    margin-right: 1.5em;
+    width: 270px; }
+  .main-content ul, .main-content p {
+    font-size: 1.2em; }
+  .main-content h3 {
+    clear: both; }
+
+aside {
+  float: left;
+  margin-bottom: .5em;
+  width: 24.4em; }
+  aside .aside1, aside .aside2 {
+    margin-bottom: .5em;
+    padding: 1em;
+    background-color: #fff;
+    height: 25em; }
+  aside ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    aside ul li {
+      margin: 0;
+      padding: 0; }
+    aside ul a {
+      text-decoration: none;
+      color: navy;
+      font-size: 1.2em; }
+    aside ul a:hover {
+      color: blue; }
+
+.bottom {
+  float: left;
+  margin-bottom: .5em;
+  background-color: #fff;
+  width: 75em;
+  height: 30em;
+  padding: 1em; }
+  .bottom img {
+    float: right;
+    padding: 0 .5em;
+    width: 280px; }
+  .bottom ul, .bottom p {
+    font-size: 1.2em; }
+
+main::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.gallery {
+  background-color: white;
+  padding-bottom: 2em; }
+  .gallery h2 {
+    padding: 2em; }
+  .gallery ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0; }
+    .gallery ul li {
+      padding: 0;
+      display: inline-block;
+      margin: .5em; }
+
+/*footerstyles*/
+footer {
+  width: 100%;
+  text-align: right; }
+
+/*# sourceMappingURL=style.css.map */

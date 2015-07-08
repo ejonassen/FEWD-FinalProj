@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Adaptive vs. Responsive Design</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script language="javascript"> 
+ 	var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+        if (mobile) {
+            window.location.replace("home_m.html");
+        }
+
+   </script>
+</head>
+<body>
+	<div class="wrapper">
+	
+		<header>
+			<h1>Adaptive vs. Responsive Design</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	
+		<main>
+			<aside>
+				<div class="aside1"><h2>Links</h2>
+					<p>Learn more about adaptive and responsive design, the differences between them, and which you should choose for your own projects!</p>
+					<ul>
+						<li><a href="http://www.techrepublic.com/blog/web-designer/what-is-the-difference-between-responsive-vs-adaptive-web-design/">What's the Difference?</a></li>
+						<li><a href="http://blog.uxpin.com/6439/responsive-vs-adaptive-design-whats-best-choice-designers/">Which to Choose for your Project?</a></li>
+						<li><a href="https://developer.mozilla.org/en-US/Apps/Design/UI_layout_basics/Responsive_design_versus_adaptive_design">MDN on Adaptive vs Responsive Design</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Adaptive_web_design">Wikipedia!</a></li>
+
+					</ul>
+				</div>
+			</aside>
+			<div class="main-content">
+				<h2>Responsive Design</h2>
+				<img src="img/rd1.jpg" alt="Some image">
+				<p>"Responsive Design" is the idea that a webpage should dynamically resize to deal with different resolutions. It focuses primarily on the definining principle of "flexibility," and allows a single design to function on all devices by making use of flexible grids and media queries.</p>
+				<h3>Key Points</h3>
+				<ul>
+					<li>Resizes Dynamically, works without refresh</li>
+					<li>Supports a hypothetically infinite range of resolutions</li>
+					<li>An entirely front-end solution</li>
+					<li>Requires more information to be loaded to accomodate all resolutions</li>
+				</ul>
+			</div>
+
+			<div class="bottom">
+				<h2>Adaptive Design</h2>
+				<img src="img/rd2.jpg" alt="Some image">
+				<p>"Adaptive Design" is the idea that an entirely different webpage altogether should be served to devices of differing resolutions. While this may result in less "consistency" between differents platforms, it often results in faster loadtimes and allows for completely custom design for each individual layout.</p>
+				<h3>Key Points</h3>
+				<ul>
+					<li>Offers more granular control over elements and their positioning (as the webpage can be designed manually for each supported resolution).</li>
+					<li>Requires that each supported resolution be specifically designed for</li>
+					<li>Does not require modification to the original webpage</li>
+					<li>Requires back-end/serverside support to detect User Agent, as well as up-to-date device lists</li>
+				</ul>
+			</div>
+		</main>
+	
+		<footer>
+			<p>&copy; 2015</p>
+		</footer>
+	</div>
+</body>
+</html>
