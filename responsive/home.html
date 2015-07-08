@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Adaptive vs. Responsive Design</title>
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
-
 </head>
 <body>
 	<div class="wrapper">
@@ -14,9 +15,10 @@
 			</header>
 			<nav>
 				<ul>
-					<li><a href="#">Home</a></li>
+					<li><a href="home.html">Home</a></li>
 					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="#">Dummylink</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -24,21 +26,21 @@
 		<main>
 			<div class="row">
 				<aside class="col-1 box">
-					<h3>Links</h3>
-						<p>Links to relevant information (mostly to take up page space tbh).</p>
-						<ul>
-							<li><a href="#">hi mom</a></li>
-							<li><a href="#">hi mom</a></li>
-							<li><a href="#">hi mom</a></li>
-							<li><a href="#">hi mom</a></li>
-							<li><a href="#">hi mom</a></li>
+					<h2>Links</h2>
+					<p>Learn more about adaptive and responsive design, the differences between them, and which you should choose for your own projects!</p>
+					<ul>
+						<li><a href="http://www.techrepublic.com/blog/web-designer/what-is-the-difference-between-responsive-vs-adaptive-web-design/">What's the Difference?</a></li>
+						<li><a href="http://blog.uxpin.com/6439/responsive-vs-adaptive-design-whats-best-choice-designers/">Which to Choose for your Project?</a></li>
+						<li><a href="https://developer.mozilla.org/en-US/Apps/Design/UI_layout_basics/Responsive_design_versus_adaptive_design">MDN on Adaptive vs Responsive Design</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Adaptive_web_design">Wikipedia!</a></li>
 
-						</ul>
+					</ul>
 				</aside>
 				<div class="col-2 box">
 					<h2>Responsive Design</h2>
-					<img src="http://placehold.it/250x250" alt="Some image">
-					<p>"Responsive Design" is the idea that a webpage should dynamically resize to deal with different resolutions.</p>
+					<p>
+						<img src="img/rd1-270px.jpg" alt="Some image">
+						"Responsive Design" is the idea that a webpage should dynamically resize to deal with different resolutions. It focuses primarily on the definining principle of "flexibility," and allows a single design to function on all devices by making use of flexible grids and media queries.</p>
 					<h3>Key Points</h3>
 					<ul>
 						<li>Resizes Dynamically, works without refresh</li>
@@ -52,8 +54,9 @@
 			<div class="row">
 				<div class="col-3">
 					<h2>Adaptive Design</h2>
-					<img src="http://placehold.it/250x250" alt="Some image">
-					<p>"Adaptive Design" is the idea that a different webpage altogether should be served to devices of differing resolutions.</p>
+					<p>
+						<img src="img/rd2-280px.jpg" alt="Some image">
+						"Adaptive Design" is the idea that a different webpage altogether should be served to devices of differing resolutions.</p>
 						<ul>
 							<li>Offers more granular control over elements and their positioning (as the webpage can be designed manually for each supported resolution).</li>
 							<li>Requires that each supported resolution be specifically designed for</li>
