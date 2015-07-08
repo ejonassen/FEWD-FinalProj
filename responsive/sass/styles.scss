@@ -23,11 +23,16 @@ $color3: orange;
 	}
 }
 
-@mixin headerplace($bgsize) {
-	background-size: $bgsize;
-	background-position: 30px 0;
+@mixin headerplace($image, $align, $height) {
+	background: url($image) no-repeat $align center;
+	background-size: contain;
+	height: $height;
 }
 
+@mixin h1size($pad, $size) {
+	padding: $pad 1em 1em .5em;
+	font-size: $size;
+}
 
 @mixin column($width) {
 	width: $width;
@@ -67,45 +72,31 @@ body{
 
 
 header{
-	//margin .625em auto;
 	margin: 0 auto;
-	background: url(../img/header1-1250px.png) no-repeat top center;
-	@include headerplace(100%);
+	@include headerplace('../img/header-large.png', top, 360px);
 	h1{
 		color: white;
 		text-shadow: 0 0 10px black;
+		@include h1size(290px, 3em);
 	}
 
-	@media (min-width:1090px) {
-		height: 360px;
-		h1 {
-			padding: 290px 1em 1em .5em;
-			font-size: 3em;
-		}
-	}
 	@media (min-width:960px) and (max-width:1089px) {
 		height: 310px;
 		h1 {
-			padding: 240px 1em 1em .5em;
-			font-size: 2.7em;
+			@include h1size(240px, 2.7em);
 		}
 	}
 	@media (min-width:716px) and (max-width:959px) {
-		background: url(../img/header1-960px.png) no-repeat top center;
-		@include headerplace(100%);
-		height: 270px;
+		@include headerplace('../img/header-med.png', top, 270px);
 		h1 {
-			padding: 200px 1em 1em .5em;
+			@include h1size(220px, 2.5em);
 		}
 	}
 	@media (max-width:715px) {
-		background: url(../img/header1-715px.png) no-repeat bottom left;
-		height: 210px;
+		@include headerplace('../img/header-small.png', bottom, 210px);
 		margin-bottom: .5em;
-	}
-
-	@media (max-width: 525px) {
 		h1 {
+			@include h1size(0, 2.2em);
 			text-align: center;
 		}
 	}
@@ -124,7 +115,7 @@ nav {
 		li {
 			padding: 1em;
 			display: inline-block;
-			@media (max-width:830px) {
+			@media (max-width:700px) {
 				display: block;
 				padding: 0;
 				text-align: center;
